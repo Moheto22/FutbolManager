@@ -5,7 +5,9 @@ public class Player extends Person{
     private double quality;
     private static int numberOfPlayers;
     private String position;
-
+    private int heigth;
+    private int weight;
+    private int dorsal;
 
     protected Player(String name, int age, String nation, String surname) {
         super(name, age, nation, surname);

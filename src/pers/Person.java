@@ -37,11 +37,9 @@ public abstract class Person {
     public String getSurname() {
         return surname;
     }
-
     public Team getClub() {
         return club;
     }
-
     public double getMotivation() {
         return motivation;
     }
