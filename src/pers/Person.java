@@ -10,6 +10,7 @@ public abstract class Person {
     protected Team club;
     protected double motivation;
     protected int salary;
+    private String stylePlaying;
     protected Person(String name, int yearOfBirth, String nation, String surname) {
         this.name = name;
         this.yearOfBirth = yearOfBirth;
@@ -47,5 +48,13 @@ public abstract class Person {
 
     public int getSalary() {
         return salary;
+    }
+
+    public String getStylePlaying() {
+        return stylePlaying;
+    }
+
+    public void setStylePlaying(String stylePlaying) {
+        this.stylePlaying = stylePlaying;
     }
 }
