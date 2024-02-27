@@ -55,4 +55,10 @@ public abstract class Person {
     public void setStylePlaying(String stylePlaying) {
         this.stylePlaying = stylePlaying;
     }
+
+    @Override
+    public String toString() {
+        return "Nombre: "+this.name+", Apellido: "+this.surname+", Nacionalidad: "+this.nation+", Año de nacimiento: "+this.yearOfBirth+", Club: "+this.club.getName()+", Motivación: "+this.motivation+
+                ", Estilo: "+stylePlaying;
+    }
 }
