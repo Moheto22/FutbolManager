@@ -8,6 +8,7 @@ public abstract class Person {
     protected final String nation;
     protected final String surname;
     protected Team club;
+    protected boolean transfer;
     protected double motivation;
     protected int salary;
     private String stylePlaying;
@@ -33,6 +34,9 @@ public abstract class Person {
     public String getNation() {
         return nation;
     }
+    public void increaseSalary(){
+
+    }
 
     public String getSurname() {
         return surname;
@@ -52,8 +56,16 @@ public abstract class Person {
         return stylePlaying;
     }
 
-    public void setStylePlaying(String stylePlaying) {
-        this.stylePlaying = stylePlaying;
+    public boolean isTransfer() {
+        return transfer;
+    }
+
+    public void setTransfer(boolean transfer) {
+        this.transfer = transfer;
+    }
+
+    public void setClub(Team club) {
+        this.club = club;
     }
 
     @Override

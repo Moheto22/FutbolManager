@@ -5,12 +5,17 @@ public class Player extends Person{
     private double quality;
     private static int numberOfPlayers;
     private String position;
-    private int heigth;
+    private double heigth;
     private int weight;
     private int dorsal;
 
-    protected Player(String name, int age, String nation, String surname) {
+    protected Player(String name, int age, String nation, String surname,int gols, double heigth, int weight, int dorsal,double quality) {
         super(name, age, nation, surname);
+        this.gols=gols;
+        this.heigth=heigth;
+        this.weight=weight;
+        this.dorsal=dorsal;
+        this.quality=quality;
         numberOfPlayers++;
     }
     @Override
